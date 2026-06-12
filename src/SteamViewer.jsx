@@ -752,6 +752,7 @@ function SteamViewer() {
         <div className='footer'>
           <div className='footer-item'>Feito com ❤ por Guilherme Severo</div>
           <div className='footer-item'>Este site não é associado à Valve Corp.</div>
+          <div className='footer-item'>Os dados exibidos são provenientes de perfis públicos da Steam</div>
           <div className='footer-item'>Ícones utilizados do site icons8.com.br</div>
         </div>
     </>
