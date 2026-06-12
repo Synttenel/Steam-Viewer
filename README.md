@@ -28,7 +28,8 @@ Exibe informações sobre o jogador adicionado, informações provenientes do AP
 
 
 
-<img width="500" height="541" alt="image" src="https://github.com/user-attachments/assets/8bf92dfc-89a9-4ed6-b1fb-96ccd5932c3f" /><img width="501" height="541" alt="image" src="https://github.com/user-attachments/assets/28cfcf72-4b88-446f-972c-a932c95bacb7" /> <img width="502" height="541" alt="image" src="https://github.com/user-attachments/assets/0ba1284d-9a9d-4acf-b085-f5107ea6cacb" /> <img width="499" height="538" alt="image" src="https://github.com/user-attachments/assets/fbd76351-87a2-443f-8f39-d2dfd4c232a4" />
+<img width="500" height="541" alt="image" src="https://github.com/user-attachments/assets/8bf92dfc-89a9-4ed6-b1fb-96ccd5932c3f" /><img width="360" height="202" alt="au74he" src="https://github.com/user-attachments/assets/7efc9746-0ac5-4310-a675-76e7c4a50738" />
+
 
 
 
