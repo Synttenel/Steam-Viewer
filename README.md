@@ -1,16 +1,37 @@
-# React + Vite
+# SteamViewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Site Visualizador de informações da Steam.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este site não é associado à Valve Corp.
 
-## React Compiler
+<img width="1920" height="952" alt="image" src="https://github.com/user-attachments/assets/66505cff-4124-4b4d-a3c5-fa8230068bc5" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+# Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Rank de pontos por seções do perfil Steam.
+
+Distintivos por quantidade de pontos.
+
+Exibe informações sobre o jogador adicionado, informações provenientes do API da Steam, são informações públicas como:
+1. Nome.
+2. Nickname.
+3. Nível.
+4. Número de jogos.
+5. Número de Insígnias.
+6. Número de horas jogadas totais.
+7. Número de horas jogadas nas últimas duas semanas.
+8. Idade do perfil.
+9. Número de amigos.
+10. Número de grupos.
+
+
+
+<img width="500" height="541" alt="image" src="https://github.com/user-attachments/assets/8bf92dfc-89a9-4ed6-b1fb-96ccd5932c3f" /><img width="501" height="541" alt="image" src="https://github.com/user-attachments/assets/28cfcf72-4b88-446f-972c-a932c95bacb7" /> <img width="502" height="541" alt="image" src="https://github.com/user-attachments/assets/0ba1284d-9a9d-4acf-b085-f5107ea6cacb" /> <img width="499" height="538" alt="image" src="https://github.com/user-attachments/assets/fbd76351-87a2-443f-8f39-d2dfd4c232a4" />
+
+
+
+
+
+
