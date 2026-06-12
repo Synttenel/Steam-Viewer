@@ -1,0 +1,407 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    
+
+}
+img{
+    -webkit-user-drag: none;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+   
+    backdrop-filter: blur(10px);
+    background-color: #171a21c4;
+    
+    padding: 10px;
+}
+.top-header{
+    font-size: 2.25rem;
+    font-weight: bolder;
+    font-style: italic;
+    border-left: 5px solid white;
+    padding-left: 5px;
+    border-radius: 3px;
+
+}
+.top-subheader{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    margin-top: 10px;
+    backdrop-filter: blur(10px);
+    background-color: #171a21c4;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 10px;
+}
+.search-tip{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    background-color:#66c0f4;
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    user-select: none;
+    transition: all 0.25s ease;
+}
+.search-tip:hover{
+    cursor: pointer;
+    background-color: #66c0f4b0;
+}
+.search-input{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    padding: 5px;
+    
+}
+.search-submit{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    background-color:#a3c702;
+    border: none;
+    padding: 5px;
+    text-align:center;
+    text-decoration: none;
+    user-select: none;
+    transition: all 0.75s ease;
+}
+.search-submit:hover{
+    cursor: pointer;
+    background-color: rgba(102, 244, 126, 0.575);
+    
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+    background-color:#232730c4
+}
+@property --deg{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes spin {
+    to{
+        --deg: 360deg; 
+
+    }
+
+}
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: min(90vw, 500px);
+    
+    transition: all 0.25s ease;
+    gap: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.25s ease;
+    animation: spin 4s linear infinite;
+    border: 2px outset white;
+    
+
+}
+.card:hover{
+    background: conic-gradient(from var(--deg), #66c0f4c9, #66c0f4, #66c0f4f8,#66c0f4c9);
+    border: 2px solid #66c0f4c9;
+}
+.card-rank{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.55rem;
+    font-style: italic;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    text-shadow: 0 0 50px white;
+    text-shadow: -1px -1px 10px rgb(0, 0, 0);
+    border-radius: 999px;
+}
+.card-rank-1{
+    color: gold;
+
+    text-shadow: -1px -1px 5px rgb(251, 255, 6);
+}
+.card-rank-2{
+    color: rgb(255, 255, 255);
+    
+    text-shadow: -1px -1px 5px rgb(255, 255, 255), 0 0 10px rgb(0, 0, 0);
+}
+.card-rank-3{
+    color: rgb(205, 127, 50);
+    text-shadow: -1px -1px 5px rgb(205, 127, 50), -1px -1px 5px rgb(0, 0, 0);
+}
+.card-header{
+    font-size: 2.25rem;
+    font-weight: bolder;
+
+}
+.card-header-career{
+    text-shadow: 0 0 10px gold;
+    border-radius: 5px;
+}
+.card-header-experience{
+    text-shadow: 0 0 10px greenyellow;
+    border-radius: 5px;
+}
+.card-header-social{
+    text-shadow: 0 0 10px silver;
+    border-radius: 5px;
+}
+.card-header-points{
+    text-shadow: 0 0 10px gold, 0 0 10px silver;
+    border-radius: 5px;
+}
+.card-level{
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0 0 1px white;
+
+}
+.card-image{
+    height: min(200px, 100vh);
+    width: min(200px, 100vw);
+    border-radius: 1000px;
+    backdrop-filter: blur(10px);
+    
+}
+.card-rewards{
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 10px;
+    border-left: 3px solid white;
+    padding: 10px;
+    background-color:#292e37c4;
+    box-shadow: 0 3px 10px white;
+    text-align: center;
+}
+.card-rewards-career{
+    border-left: 3px solid gold;
+}
+.card-rewards-experience{
+    border-left: 3px solid greenyellow;
+}
+.card-rewards-social{
+    border-left: 3px solid silver;
+}
+.card-rewards-points{
+    box-shadow: 0 0 10px gold, 0 0 20px silver;
+}
+.card-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.card-list-item{
+    
+    padding: 5px;
+    border-radius: 5px;
+    
+
+}
+.card-button-tooltip{
+    display: flex;
+    position: absolute;
+    background-color: #292e37c4;
+    border-radius: 5px;
+    padding: 5px;
+    bottom: 2px;
+    text-align: center;
+    
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+    opacity: 0;
+    user-select: none;
+    z-index: 998;
+}
+
+.card-button-tooltip-mobile{
+    display: none;
+    
+    
+    background-color: #292e37c4;
+    border-radius: 5px;
+    padding: 5px;
+    
+    text-align: center;
+    
+    font-size: 0.95rem;
+    
+    user-select: none;
+    
+}
+.card-button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.card-button-card{
+    transition: all 0.25s ease;
+}
+.card-button-card:hover .card-button{
+    translate: 0 -5px; 
+}
+.card-button-card:hover .card-button-tooltip{
+    opacity: 100%;
+}
+.card-button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    user-select: none;
+    transition: all 0.25s ease;
+    border-radius: 999px;
+}
+.card-button:hover{
+    cursor: pointer;
+}
+.card-info-container{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    overflow-y:scroll;
+    transition: all 0.25s ease;
+    background-color: #292e37c4;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+    
+}
+.card-info-card{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    top: 0;
+    
+}
+.card-info-value{
+    font-size: 1.25rem;
+    font-style: italic;
+
+}
+.card-info-button{
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    transition: all 0.25s ease;
+    border-bottom-right-radius: 5px;
+    z-index: 999;
+}
+.card-info-button:hover{
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    background-color: #e2b8b8;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    backdrop-filter: blur(10px);
+    background-color: #171a21c4;
+    z-index: 999;
+    padding: 10px;
+}
+.footer-item{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: justify;
+    
+    
+    
+    padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .search-container{
+    flex-wrap: wrap
+  }
+  .search-submit{
+    width: 100px;
+  }
+  .card-button-tooltip-mobile{
+    display: flex;
+  }
+  .card-button-tooltip{
+    display:none;
+  }
+}

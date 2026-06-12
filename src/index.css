@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+  color: white;
+}
+html{
+  margin: 0;
+  padding: 0;
+  
+  background: linear-gradient(180rad,#66c0f477,rgb(5, 13, 14));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.root{
+  margin: 0;
+  padding: 0;
+}
